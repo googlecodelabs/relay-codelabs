@@ -1,0 +1,28 @@
+{
+  "target": "ReflectButton",
+  "package": "com.google.relay.example.reflect.ui.components",
+  "generateCode": false,
+  "generatePreviews": false,
+  "fieldMappings": [
+    {
+      "type": "parameter",
+      "source": "Icon",
+      "target": "materialIconName"
+    },
+    {
+      "type": "parameter",
+      "source": "Label",
+      "target": "label"
+    },
+    {
+      "type": "design",
+      "source": "design",
+      "basePackage": "com.google.relay.example.reflect"
+    },
+    {
+      "type": "parameter",
+      "source": "on Tap",
+      "target": "onTap"
+    }
+  ]
+}

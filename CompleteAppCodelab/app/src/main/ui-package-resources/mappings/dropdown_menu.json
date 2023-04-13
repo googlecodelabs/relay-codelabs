@@ -1,0 +1,6 @@
+{
+    "target": "ReflectDropdownMenu",
+    "package": "com.google.relay.example.reflect.ui.components",
+    "generateImplementation": false,
+    "generatePreviews": false
+}
