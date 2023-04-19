@@ -1,6 +1,6 @@
 # Reflect: A Daily Habit Tracker
 
-This repository contains source code for *Reflect*, an example Android
+This directory contains source code for *Reflect*, an example Android
 application written using [Jetpack Compose](https://developer.android.com/jetpack/compose)
 and [Relay](https://relay.material.io/).
 
