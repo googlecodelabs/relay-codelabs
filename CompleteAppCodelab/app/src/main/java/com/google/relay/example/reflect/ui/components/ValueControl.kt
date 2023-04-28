@@ -64,7 +64,6 @@ fun ValueControl(
 
     Value(
         modifier
-            .height(64.dp)
             .clip(shape = RoundedCornerShape(size = 32.dp))
             .combinedClickable(onLongClick = onLongClick) {
                 if (!isEditing) {
@@ -101,7 +100,7 @@ fun ValueControllerPreview() {
     )
     ReflectTheme {
         Box(
-            modifier = Modifier.width(388.dp)
+            modifier = Modifier.width(388.dp).height(64.dp)
         ) {
             ValueControl(data)
         }

@@ -57,7 +57,7 @@ fun HomeScreen(
                     trackerData = it,
                     onEditTracker = onEditTracker,
                     onDeleteTracker = deleteTracker,
-                    modifier = modifier.padding(horizontal = 10.dp, vertical = 5.dp),
+                    modifier = modifier.height(64.dp).padding(horizontal = 10.dp, vertical = 5.dp),
                 )
             }
         }

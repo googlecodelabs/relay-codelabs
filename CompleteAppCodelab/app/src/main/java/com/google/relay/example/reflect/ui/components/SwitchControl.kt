@@ -55,5 +55,7 @@ fun SwitchControllerPreview() {
             type = TrackerType.BOOLEAN
         )
     )
-    SwitchControl(data)
+    SwitchControl(
+        // TODO: Pass data to SwitchControl
+    )
 }

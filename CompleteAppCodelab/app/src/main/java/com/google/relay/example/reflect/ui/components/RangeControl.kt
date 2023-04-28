@@ -58,7 +58,6 @@ fun RangeControl(
 
     Range(
         modifier
-            .height(64.dp)
             .clip(shape = RoundedCornerShape(size = 32.dp))
             .combinedClickable(onLongClick = onLongClick) {
                 if (trackerData.value >= trackerData.tracker.maxValue) {
