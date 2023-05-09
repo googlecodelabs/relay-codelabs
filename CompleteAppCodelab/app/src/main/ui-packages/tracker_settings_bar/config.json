@@ -1,0 +1,4 @@
+{
+  "preview-theme": "com.google.relay.example.reflect.ui.theme.ReflectTheme",
+  "ambient-translations-path": "app/src/main/ui-package-resources/style-mappings/figma_styles.json"
+}

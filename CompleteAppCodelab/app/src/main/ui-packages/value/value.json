@@ -1,0 +1,445 @@
+{
+  "name": "value",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "IY4Bb1x4lFHMiLuPnjjUve",
+    "node": "114:17462",
+    "version": "3264829284",
+    "component-id": "5635e41125c49225645f814a490a0a8a0fc9002b"
+  },
+  "default": "mode=default",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "active-overlay"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "group",
+        "id": "label"
+      },
+      {
+        "type": "text",
+        "id": "value"
+      },
+      {
+        "type": "text",
+        "id": "emoji"
+      },
+      {
+        "type": "text",
+        "id": "title"
+      },
+      {
+        "type": "adin_component",
+        "id": "Decrement Toggle Button",
+        "key": "value_toggle_button"
+      },
+      {
+        "type": "adin_component",
+        "id": "Increment Toggle Button",
+        "key": "value_toggle_button"
+      }
+    ],
+    "modes": {
+      "mode=default": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "32.0",
+            "is-structured": "false",
+            "children": [
+              "active-overlay",
+              "top_level_synth"
+            ],
+            "background-color": "^md.sys.color.secondary-container"
+          },
+          {
+            "id": "active-overlay",
+            "presence": "$hasValue",
+            "border-radius": "32.0",
+            "is-structured": "false",
+            "background-color": "^md.sys.color.surface-variant"
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "padding": {
+              "left": "20.0",
+              "top": "16.0",
+              "right": "11.0",
+              "bottom": "16.0"
+            },
+            "border-radius": "32.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "label",
+              "value"
+            ]
+          },
+          {
+            "id": "label",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "emoji",
+              "title"
+            ],
+            "item-spacing": "12.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "value",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "^md.sys.typescale.headline-small.weight",
+            "color": "^md.sys.color.on-surface",
+            "text-content": "$value",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.headline-small.size",
+            "letter-spacing": "^md.sys.typescale.headline-small.tracking",
+            "line-height": "^md.sys.typescale.headline-small.line-height",
+            "typeface": "^md.sys.typescale.headline-small.font"
+          },
+          {
+            "id": "emoji",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$emoji",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "32.0"
+          },
+          {
+            "id": "title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "^md.sys.typescale.headline-large.weight",
+            "color": "^md.sys.color.on-surface",
+            "text-content": "$title",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.headline-large.size",
+            "letter-spacing": "^md.sys.typescale.headline-large.tracking",
+            "line-height": "^md.sys.typescale.headline-large.line-height",
+            "typeface": "^md.sys.typescale.headline-large.font"
+          }
+        ]
+      },
+      "mode=editing": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "32.0",
+            "is-structured": "false",
+            "children": [
+              "active-overlay",
+              "top_level_synth"
+            ],
+            "background-color": "^md.sys.color.secondary-container"
+          },
+          {
+            "id": "active-overlay",
+            "presence": "$hasValue",
+            "border-radius": "32.0",
+            "is-structured": "false",
+            "background-color": "^md.sys.color.surface-variant"
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "border-radius": "32.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Decrement Toggle Button",
+              "value",
+              "Increment Toggle Button"
+            ]
+          },
+          {
+            "id": "Decrement Toggle Button",
+            "tap-handler": "$handleDecrement",
+            "design": "type=subtract",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "value",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "^md.sys.typescale.headline-large.weight",
+            "color": "^md.sys.color.on-surface",
+            "text-content": "$value",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.headline-large.size",
+            "letter-spacing": "^md.sys.typescale.headline-large.tracking",
+            "line-height": "^md.sys.typescale.headline-large.line-height",
+            "typeface": "^md.sys.typescale.headline-large.font"
+          },
+          {
+            "id": "Increment Toggle Button",
+            "tap-handler": "$handleIncrement",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "hasValue": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    "value": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "emoji": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "handleDecrement": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "handleIncrement": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "ambients": {
+    "md.sys.color.secondary-container": {
+      "data-type": "color",
+      "description": null
+    },
+    "md.sys.color.surface-variant": {
+      "data-type": "color",
+      "description": null
+    },
+    "md.sys.color.on-surface": {
+      "data-type": "color",
+      "description": null
+    },
+    "md.sys.typescale.headline-small.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.headline-small.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-small.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-small.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-small.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-large.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.headline-large.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-large.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-large.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-large.line-height": {
+      "data-type": "double",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "mode=default",
+      "size": {
+        "width": 388.0,
+        "height": 64.0
+      },
+      "parameters": {
+        "value": " ",
+        "emoji": "🍕",
+        "title": "Value"
+      },
+      "ambients": {
+        "md.sys.color.secondary-container": {
+          "alpha": "1.0",
+          "hue": "32.727272727272755",
+          "saturation": "0.09482758620689659",
+          "value": "0.9098039215686274"
+        },
+        "md.sys.color.surface-variant": {
+          "alpha": "1.0",
+          "hue": "22.500000000000135",
+          "saturation": "0.032",
+          "value": "0.9803921568627451"
+        },
+        "md.sys.color.on-surface": {
+          "alpha": "1.0",
+          "hue": "24.545454545454554",
+          "saturation": "0.275",
+          "value": "0.3137254901960784"
+        },
+        "md.sys.typescale.headline-small.font": "DM Sans",
+        "md.sys.typescale.headline-small.weight": 400.0,
+        "md.sys.typescale.headline-small.size": 24.0,
+        "md.sys.typescale.headline-small.line-height": 1.0,
+        "md.sys.typescale.headline-large.font": "DM Sans",
+        "md.sys.typescale.headline-large.weight": 700.0,
+        "md.sys.typescale.headline-large.size": 32.0,
+        "md.sys.typescale.headline-large.line-height": 1.0
+      }
+    },
+    {
+      "design": "mode=editing",
+      "size": {
+        "width": 388.0,
+        "height": 64.0
+      },
+      "parameters": {
+        "value": " ",
+        "emoji": "🍕",
+        "title": "Value"
+      },
+      "ambients": {
+        "md.sys.color.secondary-container": {
+          "alpha": "1.0",
+          "hue": "32.727272727272755",
+          "saturation": "0.09482758620689659",
+          "value": "0.9098039215686274"
+        },
+        "md.sys.color.surface-variant": {
+          "alpha": "1.0",
+          "hue": "22.500000000000135",
+          "saturation": "0.032",
+          "value": "0.9803921568627451"
+        },
+        "md.sys.color.on-surface": {
+          "alpha": "1.0",
+          "hue": "24.545454545454554",
+          "saturation": "0.275",
+          "value": "0.3137254901960784"
+        },
+        "md.sys.typescale.headline-small.font": "DM Sans",
+        "md.sys.typescale.headline-small.weight": 400.0,
+        "md.sys.typescale.headline-small.size": 24.0,
+        "md.sys.typescale.headline-small.line-height": 1.0,
+        "md.sys.typescale.headline-large.font": "DM Sans",
+        "md.sys.typescale.headline-large.weight": 700.0,
+        "md.sys.typescale.headline-large.size": 32.0,
+        "md.sys.typescale.headline-large.line-height": 1.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -42,10 +42,23 @@ fun TrackerControl(
     var confirming by remember { mutableStateOf(false) }
 
     Box(modifier = modifier) {
-
-        // TODO: replace with Relay tracker components
-        Text(text = trackerData.tracker.toString())
-
+        when (trackerData.tracker.type) {
+            TrackerType.BOOLEAN ->
+                SwitchControl(
+                    trackerData = trackerData,
+                    onLongClick = { expanded = true },
+                )
+            TrackerType.RANGE ->
+                RangeControl(
+                    trackerData = trackerData,
+                    onLongClick = { expanded = true },
+                )
+            TrackerType.COUNT ->
+                ValueControl(
+                    trackerData = trackerData,
+                    onLongClick = { expanded = true },
+                )
+        }
         DropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false },

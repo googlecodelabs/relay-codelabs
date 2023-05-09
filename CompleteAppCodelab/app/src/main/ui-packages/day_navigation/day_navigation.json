@@ -1,0 +1,183 @@
+{
+  "name": "day_navigation",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "IY4Bb1x4lFHMiLuPnjjUve",
+    "node": "119:17416",
+    "version": "3264829284",
+    "component-id": "55482eaed5c3e49cc03923f516b0bb8615c25f0a"
+  },
+  "default": "Day Navigation",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Date Navigation Button Prev",
+        "key": "icon_button"
+      },
+      {
+        "type": "text",
+        "id": "Friday, 24"
+      },
+      {
+        "type": "adin_component",
+        "id": "Date Navigation Button Next",
+        "key": "icon_button"
+      }
+    ],
+    "modes": {
+      "Day Navigation": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Date Navigation Button Prev",
+              "Friday, 24",
+              "Date Navigation Button Next"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Date Navigation Button Prev",
+            "on Tap": "$on Prev Tapped",
+            "Icon": "navigate_before",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            }
+          },
+          {
+            "id": "Friday, 24",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "^md.sys.typescale.headline-medium.weight",
+            "color": "^md.sys.color.on-background",
+            "text-content": "$date",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.headline-medium.size",
+            "letter-spacing": "^md.sys.typescale.headline-medium.tracking",
+            "line-height": "^md.sys.typescale.headline-medium.line-height",
+            "typeface": "^md.sys.typescale.headline-medium.font"
+          },
+          {
+            "id": "Date Navigation Button Next",
+            "on Tap": "$on Next Tapped",
+            "Icon": "navigate_next",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on Prev Tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "date": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Next Tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "ambients": {
+    "md.sys.color.on-background": {
+      "data-type": "color",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.line-height": {
+      "data-type": "double",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "Day Navigation",
+      "size": {
+        "width": 412.0,
+        "height": 48.0
+      },
+      "parameters": {
+        "date": "Friday, 24"
+      },
+      "ambients": {
+        "md.sys.color.on-background": {
+          "alpha": "1.0",
+          "hue": "36.31578947368422",
+          "saturation": "0.7037037037037037",
+          "value": "0.21176470588235294"
+        },
+        "md.sys.typescale.headline-medium.font": "DM Sans",
+        "md.sys.typescale.headline-medium.weight": 500.0,
+        "md.sys.typescale.headline-medium.size": 24.0,
+        "md.sys.typescale.headline-medium.line-height": 1.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
