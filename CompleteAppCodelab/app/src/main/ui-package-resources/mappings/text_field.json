@@ -1,0 +1,6 @@
+{
+  "target": "ReflectTextField",
+  "package": "com.google.relay.example.reflect.ui.components",
+  "generateImplementation": true,
+  "generatePreviews": false
+}

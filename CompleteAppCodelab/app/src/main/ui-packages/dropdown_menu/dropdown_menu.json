@@ -1,0 +1,111 @@
+{
+  "name": "dropdown_menu",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "IY4Bb1x4lFHMiLuPnjjUve",
+    "node": "516:18511",
+    "version": "3264829284",
+    "component-id": "46ac46996dd66488a6239126110aa431b16eea8c"
+  },
+  "default": "Dropdown menu",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Text field",
+        "key": "text_field"
+      }
+    ],
+    "modes": {
+      "Dropdown menu": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Text field"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Text field",
+            "design": "$Text field design",
+            "Label text": "$Label text",
+            "Show trailing icon": "true",
+            "Leading icon": "search",
+            "Trailing icon": "arrow_drop_down",
+            "Supporting text": "Supporting text",
+            "Input text": "Input",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "210.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "On change": {
+      "data-type": "value-changed-callback-double",
+      "required": false,
+      "description": "Emits the index of the selected item in the list of items"
+    },
+    "Items": {
+      "data-type": "text",
+      "required": false,
+      "description": "Menu items, separated by commas"
+    },
+    "Selected index": {
+      "data-type": "double",
+      "required": false,
+      "description": "Index of selected item within list of items"
+    },
+    "Label text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Text field design": {
+      "data-type": "design-text_field",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Dropdown menu",
+      "size": {
+        "width": 210.0,
+        "height": 56.0
+      },
+      "parameters": {
+        "Label text": "Label",
+        "Text field design": "Style=outlined,State=enabled,Text configurations=input-text"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

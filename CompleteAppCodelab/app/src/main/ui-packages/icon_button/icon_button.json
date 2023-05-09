@@ -1,0 +1,100 @@
+{
+  "name": "icon_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "IY4Bb1x4lFHMiLuPnjjUve",
+    "node": "142:18812",
+    "version": "3264829284",
+    "component-id": "e73a27326d69818b318dfc51eb9b467b100e3485"
+  },
+  "default": "Icon Button",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "icon"
+      }
+    ],
+    "modes": {
+      "Icon Button": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on Tap",
+            "children": [
+              "icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "icon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.0"
+              }
+            },
+            "color": "^md.sys.color.on-background",
+            "text-content": "$Icon",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "32.0",
+            "typeface": "Material Icons"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on Tap": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "Icon": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "ambients": {
+    "md.sys.color.on-background": {
+      "data-type": "color",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "Icon Button",
+      "size": {
+        "width": 48.0,
+        "height": 48.0
+      },
+      "parameters": {
+        "Icon": "close"
+      },
+      "ambients": {
+        "md.sys.color.on-background": {
+          "alpha": "1.0",
+          "hue": "36.31578947368422",
+          "saturation": "0.7037037037037037",
+          "value": "0.21176470588235294"
+        }
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

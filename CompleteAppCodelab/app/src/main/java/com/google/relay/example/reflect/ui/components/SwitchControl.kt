@@ -40,9 +40,20 @@ import com.google.relay.example.reflect.switch.Switch
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun SwitchControl(
-    // TODO: Fill in this signature
+    trackerData: TrackerData,
+    modifier: Modifier = Modifier,
+    onLongClick: (() -> Unit)? = null,
 ) {
-    // TODO: Fill in this body
+    Switch(
+        modifier
+            .clip(shape = RoundedCornerShape(size = 32.dp))
+            .combinedClickable(onLongClick = onLongClick) {
+                trackerData.toggle()
+            },
+        emoji = trackerData.tracker.emoji,
+        title = trackerData.tracker.name,
+        isChecked = trackerData.isToggled(),
+    )
 }
 
 @Preview
@@ -55,7 +66,5 @@ fun SwitchControllerPreview() {
             type = TrackerType.BOOLEAN
         )
     )
-    SwitchControl(
-        // TODO: Pass data to SwitchControl
-    )
+    SwitchControl(data)
 }

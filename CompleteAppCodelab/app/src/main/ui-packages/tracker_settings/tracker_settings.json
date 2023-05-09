@@ -1,0 +1,646 @@
+{
+  "name": "tracker_settings",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "IY4Bb1x4lFHMiLuPnjjUve",
+    "node": "142:18094",
+    "version": "3264829284",
+    "component-id": "f381a5c46e1fe66b4e283264dbadf1639df3667c"
+  },
+  "default": "type=switch",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "info"
+      },
+      {
+        "type": "adin_component",
+        "id": "Emoji Field",
+        "key": "emoji_field"
+      },
+      {
+        "type": "group",
+        "id": "title"
+      },
+      {
+        "type": "adin_component",
+        "id": "Title Field",
+        "key": "text_field"
+      },
+      {
+        "type": "adin_component",
+        "id": "Type Menu",
+        "key": "dropdown_menu"
+      },
+      {
+        "type": "adin_component",
+        "id": "Unit Field",
+        "key": "text_field"
+      },
+      {
+        "type": "group",
+        "id": "config"
+      },
+      {
+        "type": "adin_component",
+        "id": "Min Field",
+        "key": "text_field"
+      },
+      {
+        "type": "adin_component",
+        "id": "Max Field",
+        "key": "text_field"
+      },
+      {
+        "type": "adin_component",
+        "id": "Step Field",
+        "key": "text_field"
+      }
+    ],
+    "modes": {
+      "type=switch": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "24.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "info"
+            ],
+            "item-spacing": "24.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "info",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Emoji Field",
+              "title"
+            ],
+            "item-spacing": "24.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Emoji Field",
+            "tap-handler": "$on Emoji Field tapped",
+            "emoji": "$emoji",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              }
+            }
+          },
+          {
+            "id": "title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Title Field",
+              "Type Menu"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Title Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Title changed",
+            "Label text": "Title",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          },
+          {
+            "id": "Type Menu",
+            "On change": "$on Type changed",
+            "Items": "$type menu options",
+            "Label text": "Type",
+            "Text field design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          }
+        ]
+      },
+      "type=value": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "24.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "info",
+              "Unit Field"
+            ],
+            "item-spacing": "24.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "info",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Emoji Field",
+              "title"
+            ],
+            "item-spacing": "24.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Unit Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Units changed",
+            "Label text": "Units",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$units",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          },
+          {
+            "id": "Emoji Field",
+            "tap-handler": "$on Emoji Field tapped",
+            "emoji": "$emoji",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              }
+            }
+          },
+          {
+            "id": "title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Title Field",
+              "Type Menu"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Title Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Title changed",
+            "Label text": "Title",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          },
+          {
+            "id": "Type Menu",
+            "On change": "$on Type changed",
+            "Items": "$type menu options",
+            "Label text": "Type",
+            "Text field design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          }
+        ]
+      },
+      "type=range": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "24.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "info",
+              "config"
+            ],
+            "item-spacing": "24.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "info",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Emoji Field",
+              "title"
+            ],
+            "item-spacing": "24.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "config",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Min Field",
+              "Max Field",
+              "Step Field"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Emoji Field",
+            "tap-handler": "$on Emoji Field tapped",
+            "emoji": "$emoji",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              }
+            }
+          },
+          {
+            "id": "title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Title Field",
+              "Type Menu"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Title Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Title changed",
+            "Label text": "Title",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          },
+          {
+            "id": "Type Menu",
+            "On change": "$on Type changed",
+            "Items": "$type menu options",
+            "Label text": "Type",
+            "Text field design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Min Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Min changed",
+            "Label text": "Minimum",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$range min",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          },
+          {
+            "id": "Max Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Max changed",
+            "Label text": "Maximum",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$range max",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          },
+          {
+            "id": "Step Field",
+            "design": "Style=outlined,State=enabled,Text configurations=input-text",
+            "On change": "$on Step changed",
+            "Label text": "Step",
+            "Leading icon": "search",
+            "Trailing icon": "cancel",
+            "Supporting text": "Supporting text",
+            "Input text": "$range step",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "emoji": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Emoji Field tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "on Title changed": {
+      "data-type": "value-changed-callback-text",
+      "required": false,
+      "description": ""
+    },
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Type changed": {
+      "data-type": "value-changed-callback-double",
+      "required": false,
+      "description": ""
+    },
+    "type menu options": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Units changed": {
+      "data-type": "value-changed-callback-text",
+      "required": false,
+      "description": ""
+    },
+    "units": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Min changed": {
+      "data-type": "value-changed-callback-text",
+      "required": false,
+      "description": ""
+    },
+    "range min": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Max changed": {
+      "data-type": "value-changed-callback-text",
+      "required": false,
+      "description": ""
+    },
+    "range max": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Step changed": {
+      "data-type": "value-changed-callback-text",
+      "required": false,
+      "description": ""
+    },
+    "range step": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "type=switch",
+      "size": {
+        "width": 380.0,
+        "height": 176.0
+      },
+      "parameters": {
+        "emoji": "😊",
+        "title": "Mood",
+        "type menu options": "Switch,Value,Range",
+        "units": "No units",
+        "range min": "1",
+        "range max": "5",
+        "range step": "1"
+      }
+    },
+    {
+      "design": "type=value",
+      "size": {
+        "width": 380.0,
+        "height": 256.0
+      },
+      "parameters": {
+        "emoji": "😊",
+        "title": "Mood",
+        "type menu options": "Switch,Value,Range",
+        "units": "No units",
+        "range min": "1",
+        "range max": "5",
+        "range step": "1"
+      }
+    },
+    {
+      "design": "type=range",
+      "size": {
+        "width": 380.0,
+        "height": 400.0
+      },
+      "parameters": {
+        "emoji": "😊",
+        "title": "Mood",
+        "type menu options": "Switch,Value,Range",
+        "units": "No units",
+        "range min": "1",
+        "range max": "5",
+        "range step": "1"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

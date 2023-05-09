@@ -1,0 +1,117 @@
+{
+  "figma": {
+    "colors": {
+      "Reflect Light/background": "md.sys.color.background",
+      "Reflect Dark/background": "md.sys.color.background",
+      "Reflect Light/on-background": "md.sys.color.on-background",
+      "Reflect Dark/on-background": "md.sys.color.on-background",
+      "Reflect Light/surface": "md.sys.color.surface",
+      "Reflect Dark/surface": "md.sys.color.surface",
+      "Reflect Light/on-surface": "md.sys.color.on-surface",
+      "Reflect Dark/on-surface": "md.sys.color.on-surface",
+      "Reflect Light/surface-variant": "md.sys.color.surface-variant",
+      "Reflect Dark/surface-variant": "md.sys.color.surface-variant",
+      "Reflect Light/on-surface-variant": "md.sys.color.on-surface-variant",
+      "Reflect Dark/on-surface-variant": "md.sys.color.on-surface-variant",
+      "Reflect Light/primary": "md.sys.color.primary",
+      "Reflect Dark/primary": "md.sys.color.primary",
+      "Reflect Light/on-primary": "md.sys.color.on-primary",
+      "Reflect Dark/on-primary": "md.sys.color.on-primary",
+      "Reflect Light/primary-container": "md.sys.color.primary-container",
+      "Reflect Dark/primary-container": "md.sys.color.primary-container",
+      "Reflect Light/on-primary-container": "md.sys.color.on-primary-container",
+      "Reflect Dark/on-primary-container": "md.sys.color.on-primary-container",
+      "Reflect Light/secondary-container": "md.sys.color.secondary-container",
+      "Reflect Dark/secondary-container": "md.sys.color.secondary-container",
+      "Reflect Light/on-secondary-container": "md.sys.color.on-secondary-container",
+      "Reflect Dark/on-secondary-container": "md.sys.color.on-secondary-container",
+      "Reflect Light/outline": "md.sys.color.outline",
+      "Reflect Dark/outline": "md.sys.color.outline",
+      "Reflect Light/error": "md.sys.color.error",
+      "Reflect Dark/error": "md.sys.color.error"
+    },
+    "typography": {
+      "symbols": {
+        "Reflect/headline/large": "md.sys.typescale.headline-large",
+        "Reflect/headline/medium": "md.sys.typescale.headline-medium",
+        "Reflect/headline/small": "md.sys.typescale.headline-small",
+        "Reflect/title/large": "md.sys.typescale.title-large",
+        "Reflect/title/medium": "md.sys.typescale.title-medium",
+        "Reflect/title/small": "md.sys.typescale.title-small",
+        "Reflect/body/large": "md.sys.typescale.body-large",
+        "Reflect/body/medium": "md.sys.typescale.body-medium",
+        "Reflect/body/small": "md.sys.typescale.body-small",
+        "Reflect/label/large": "md.sys.typescale.label-large",
+        "Reflect/label/medium": "md.sys.typescale.label-medium",
+        "Reflect/label/small": "md.sys.typescale.label-small"
+      },
+      "subproperties": {
+        "fontFamily": "font",
+        "fontWeight": "weight",
+        "fontSize": "size",
+        "letterSpacing": "tracking",
+        "lineHeightPx": "line-height"
+      }
+    }
+  },
+  "compose": {
+    "colors": {
+      "md.sys.color.background": "MaterialTheme.colorScheme.background",
+      "md.sys.color.error": "MaterialTheme.colorScheme.error",
+      "md.sys.color.error-container": "MaterialTheme.colorScheme.errorContainer",
+      "md.sys.color.inverse-on-surface": "MaterialTheme.colorScheme.inverseOnSurface",
+      "md.sys.color.inverse-surface": "MaterialTheme.colorScheme.inverseSurface",
+      "md.sys.color.on-background": "MaterialTheme.colorScheme.onBackground",
+      "md.sys.color.on-error": "MaterialTheme.colorScheme.onError",
+      "md.sys.color.on-error-container": "MaterialTheme.colorScheme.onErrorContainer",
+      "md.sys.color.on-primary": "MaterialTheme.colorScheme.onPrimary",
+      "md.sys.color.on-primary-container": "MaterialTheme.colorScheme.onPrimaryContainer",
+      "md.sys.color.on-secondary": "MaterialTheme.colorScheme.onSecondary",
+      "md.sys.color.on-secondary-container": "MaterialTheme.colorScheme.onSecondaryContainer",
+      "md.sys.color.on-surface": "MaterialTheme.colorScheme.onSurface",
+      "md.sys.color.on-surface-variant": "MaterialTheme.colorScheme.onSurfaceVariant",
+      "md.sys.color.on-tertiary": "MaterialTheme.colorScheme.onTertiary",
+      "md.sys.color.on-tertiary-container": "MaterialTheme.colorScheme.onTertiaryContainer",
+      "md.sys.color.outline": "MaterialTheme.colorScheme.outline",
+      "md.sys.color.primary": "MaterialTheme.colorScheme.primary",
+      "md.sys.color.primary-container": "MaterialTheme.colorScheme.primaryContainer",
+      "md.sys.color.secondary": "MaterialTheme.colorScheme.secondary",
+      "md.sys.color.secondary-container": "MaterialTheme.colorScheme.secondaryContainer",
+      "md.sys.color.surface": "MaterialTheme.colorScheme.surface",
+      "md.sys.color.surface-variant": "MaterialTheme.colorScheme.surfaceVariant",
+      "md.sys.color.tertiary": "MaterialTheme.colorScheme.tertiary",
+      "md.sys.color.tertiary-container": "MaterialTheme.colorScheme.tertiaryContainer"
+    },
+    "typography": {
+      "symbols": {
+        "md.sys.typescale.display-large": "MaterialTheme.typography.displayLarge",
+        "md.sys.typescale.display-medium": "MaterialTheme.typography.displayMedium",
+        "md.sys.typescale.display-small": "MaterialTheme.typography.displaySmall",
+        "md.sys.typescale.headline-large": "MaterialTheme.typography.headlineLarge",
+        "md.sys.typescale.headline-medium": "MaterialTheme.typography.headlineMedium",
+        "md.sys.typescale.headline-small": "MaterialTheme.typography.headlineSmall",
+        "md.sys.typescale.title-large": "MaterialTheme.typography.titleLarge",
+        "md.sys.typescale.title-medium": "MaterialTheme.typography.titleMedium",
+        "md.sys.typescale.title-small": "MaterialTheme.typography.titleSmall",
+        "md.sys.typescale.body-large": "MaterialTheme.typography.bodyLarge",
+        "md.sys.typescale.body-medium": "MaterialTheme.typography.bodyMedium",
+        "md.sys.typescale.body-small": "MaterialTheme.typography.bodySmall",
+        "md.sys.typescale.label-large": "MaterialTheme.typography.labelLarge",
+        "md.sys.typescale.label-medium": "MaterialTheme.typography.labelMedium",
+        "md.sys.typescale.label-small": "MaterialTheme.typography.labelSmall"
+      },
+      "subproperties": {
+        "font": "fontFamily",
+        "weight": "fontWeight",
+        "size": "fontSize",
+        "tracking": "letterSpacing",
+        "line-height": "lineHeight"
+      }
+    },
+    "options": {
+      "packages": {
+        "MaterialTheme": "androidx.compose.material3"
+      }
+    }
+  }
+}
